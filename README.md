@@ -8,8 +8,14 @@ Your Internet service provider can see every site and app you use—even if they
 [Find out more about 1.1.1.1](https://1.1.1.1)
 
 ### To Use
+#### Requirements
+* Windows 7 or later.
+* An Intel Pentium 4 processor or later that's SSE2 capable
+* 512 MB of RAM
+
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
+1. Clone the repo and install npm
 ```bash
 # Clone this repository
 git clone https://github.com/holmseyy/1.1.1.1
@@ -20,3 +26,7 @@ npm install
 # Run the app
 npm start
 ```
+
+2. Then, give Node.js elevated privlages (UAC Administrator). This is required as much of the backend work involved in changing DNS addresses involves using Windows Shell. (Shown below)
+
+![How to elevate UAC to Admin](https://i.gyazo.com/948e7f1460a11e2f691af005ce8ddd7d.gif)
