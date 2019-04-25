@@ -7,7 +7,7 @@ Your Internet service provider can see every site and app you use—even if they
 
 [Find out more about 1.1.1.1](https://1.1.1.1)
 
-### To Use
+## Installation and Use
 #### Requirements
 * Windows 7 or later.
 * An Intel Pentium 4 processor or later that's SSE2 capable
