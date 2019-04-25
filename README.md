@@ -30,3 +30,16 @@ npm start
 2. Then, give Node.js elevated privlages (UAC Administrator). This is required as much of the backend work involved in changing DNS addresses involves using Windows Shell. (Shown below)
 
 ![How to elevate UAC to Admin](https://i.gyazo.com/948e7f1460a11e2f691af005ce8ddd7d.gif)
+
+## How it works
+It's actually really simple, enabling 1.1.1.1 (and it's backup 1.0.0.1) is done through this command
+```bash
+wmic nicconfig where (IPEnabled=TRUE) call SetDNSServerSearchOrder ("1.1.1.1", "1.0.0.1")
+```
+
+And it's disabled again using this command
+```bash
+wmic nicconfig where (IPEnabled=TRUE) call SetDNSServerSearchOrder ()
+```
+
+And apart from a few checks I've built in inbetween, that's about all that glorified switch in the middle is doing.
