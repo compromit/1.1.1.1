@@ -5,6 +5,9 @@ Your Internet service provider can see every site and app you use—even if they
 
 1.1.1.1 is a service provided by Cloudflare, this Windows Application is here to help more people use it. I am not affiliated with Cloudflare in any way.
 
+The app has one simplistic look, with one switch to turn on and off the 1.1.1.1 service.
+![1.1.1.1 Windows](https://i.gyazo.com/8858804cabc27b8b8b0cf188be4fa739.png)
+
 [Find out more about 1.1.1.1](https://1.1.1.1)
 
 ## Installation and Use
