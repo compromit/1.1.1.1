@@ -3,7 +3,7 @@
 ## The free service that makes your Internet faster & more secure.
 Your Internet service provider can see every site and app you use—even if they’re encrypted. Some providers even sell this data or use it to target you with ads. 1.1.1.1 prevents anyone from snooping on you by encrypting more of the traffic leaving your computer.
 
-1.1.1.1 is a service provided by Cloudflare, I developed this Windows Application to help more people use it.
+1.1.1.1 is a service provided by Cloudflare, this Windows Application is here to help more people use it. I am not affiliated with Cloudflare in any way.
 
 [Find out more about 1.1.1.1](https://1.1.1.1)
 
