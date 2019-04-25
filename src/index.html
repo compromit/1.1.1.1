@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <title>1.1.1.1</title>
+
+    <link rel="stylesheet" href="../src/assets/css/master.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="draggable">
+        <img class="logo-nav" src="assets/logo.png" alt="">
+      </div>
+      <div class="button exit" id="close-btn">
+        <i class="material-icons">
+        close
+        </i>
+      </div>
+      <div class="button minimize" id="min-btn">
+        <i class="material-icons">
+        minimize
+        </i>
+      </div>
+    </header>
+
+    <main>
+      <img class="logo" src="https://developers.cloudflare.com/1.1.1.1/img/1.1.1.1-fancycolor.gif" alt="1.1.1.1">
+
+      <div class="container">
+        <label class="switch">
+          <input type="checkbox" id="startstop">
+          <span class="slider round"></span>
+        </label>
+
+        <div class="sub-text connected no" id="connection-status">
+          Loading
+        </div>
+
+        <div class="detail-text positive" id="connection-details">
+          Loading
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <!-- All of the Node.js APIs are available in this renderer process. -->
+      We are using Node.js <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      Electron <script>document.write(process.versions.electron)</script>
+      and 1.1.1.1 Client 1.0.0
+    </footer>
+
+    <script>
+    (function () {
+      // Retrieve remote BrowserWindow
+      const {BrowserWindow} = require('electron').remote
+
+      function init() {
+        // Minimize task
+        document.getElementById("min-btn").addEventListener("click", (e) => {
+        var window = BrowserWindow.getFocusedWindow();
+        window.minimize();
+      });
+
+      // Close app
+      document.getElementById("close-btn").addEventListener("click", (e) => {
+          var window = BrowserWindow.getFocusedWindow();
+          window.close();
+        });
+      };
+
+      document.onreadystatechange =  () => {
+        if (document.readyState == "complete") {
+          init();
+        }
+      };
+    })();
+    </script>
+    <script>
+    require('../src/index.js')
+    </script>
+  </body>
+</html>
