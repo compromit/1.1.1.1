@@ -46,3 +46,6 @@ wmic nicconfig where (IPEnabled=TRUE) call SetDNSServerSearchOrder ()
 ```
 
 And apart from a few checks I've built in inbetween, that's about all that glorified switch in the middle is doing.
+
+## Development
+Help welcome, feel free to do whatever you like, if it works well and it's secure, i'll put it on master.
