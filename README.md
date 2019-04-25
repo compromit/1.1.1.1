@@ -5,8 +5,7 @@ Your Internet service provider can see every site and app you use—even if they
 
 1.1.1.1 is a service provided by Cloudflare, I developed this Windows Application to help more people use it.
 
-[Find out more about 1.1.1.1](https://1.1.1.1) 
-[Cloudflare](https://www.cloudflare.com)
+[Find out more about 1.1.1.1](https://1.1.1.1)
 
 ### To Use
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
