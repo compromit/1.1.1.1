@@ -6,7 +6,6 @@ Your Internet service provider can see every site and app you use—even if they
 1.1.1.1 is a service provided by Cloudflare, I developed this Windows Application to help more people use it.
 
 [Find out more about 1.1.1.1](https://1.1.1.1) 
-
 [Cloudflare](https://www.cloudflare.com)
 
 ### To Use
